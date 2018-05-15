@@ -1,13 +1,16 @@
 function setup() {
   createCanvas(720, 400);
-  background(128);
+  background(255);
+
+  image(loadImage('malik.garnett.jpg'), 0, 0);
+
   noStroke();
 }
 
 function draw() {
   background(255);
-  from = color(128, 0, 0, 0.2 * 128);
-  to = color(190, 0, 200, 0.2 * 254);
+  from = color(255, 0, 0, 0.2 * 255);
+  to = color(0, 0, 255, 0.2 * 255);
   c1 = lerpColor(from, to, .33);
   c2 = lerpColor(from, to, .66);
   for (var i = 0; i < 15; i++) {
