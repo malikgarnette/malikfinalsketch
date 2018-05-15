@@ -8,12 +8,12 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  from = color(255, 0, 0, 0.2 * 255);
-  to = color(0, 0, 255, 0.2 * 255);
+  background(0);
+  from = color(155, 0, 0, 0.2 * 155);
+  to = color(230, 0, 255, 0.2 * 100);
   c1 = lerpColor(from, to, .33);
   c2 = lerpColor(from, to, .66);
-  for (var i = 0; i < 15; i++) {
+  for (var i = 0; i < 50; i++) {
     fill(from);
     quad(random(-40, 220), random(height),
          random(-40, 220), random(height),
